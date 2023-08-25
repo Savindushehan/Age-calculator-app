@@ -20,6 +20,7 @@ var year=currentDate.getFullYear();
 var month=currentDate.getMonth();
 var day=currentDate.getDate();
 
+
 BTN.onclick=function(){
    if(d2.value==""&& d5.value==""&&d8.value==""){
     d3.style.display="block";
@@ -72,8 +73,12 @@ BTN.onclick=function(){
     d6.innerHTML="must be valid month";
     d6.style.display="block";
    }else{
-    var y=(year-(d10.value));
+    var y=year-d10.value;
+    var m=month-d11.value;
+    var d=day-d12.value;
     d10.innerHTML=y;
+    d11.innerHTML=m;
+    d12.innerHTML=d;
    }
 }
 
