@@ -15,26 +15,65 @@ var d12=document.getElementById("D12");
 var BTN=document.getElementById("btn");
 
 
+var currentDate=new Date();
+var year=currentDate.getFullYear();
+var month=currentDate.getMonth();
+var day=currentDate.getDate();
+
 BTN.onclick=function(){
    if(d2.value==""&& d5.value==""&&d8.value==""){
     d3.style.display="block";
     d6.style.display="block";
     d9.style.display="block";
+   }else if(d2.value==""&& d5.value==""&& d8.value>year){
+    d3.style.display="block";
+    d6.style.display="block";
+    d9.innerHTML="must be valid year";
+    d9.style.display="block";
    }else if(d2.value==""&& d5.value==""){
     d3.style.display="block";
     d6.style.display="block";
-   }else if(d2.value==""&&d8.value==""){
+   }
+   else if(d2.value==""&&d8.value==""){
     d3.style.display="block";
     d9.style.display="block";
-   }else if(d5.value==""&&d8.value==""){
-    d6.style.display="block";
-    d9.style.display="block";
-   }else if(d2.value==""){
+   } else if(d2.value==""&&d8.value==""&&d5.value>12){
     d3.style.display="block";
-   }else if(d5.value==""){
+    d6.innerHTML="must be valid month";
     d6.style.display="block";
-   }else if(d8.value==""){
     d9.style.display="block";
+   }
+   else if(d5.value==""&&d8.value==""){
+    d6.style.display="block";
+    d9.style.display="block";
+   }else if(d5.value==""&&d8.value==""&&d2.value>31){
+    d3.innerHTML="must be vald date";
+    d3.style.display="block";
+    d6.style.display="block";
+    d9.style.display="block";
+   }
+   else if(d2.value==""&&d5.value>12&& d8.value>year){
+    d3.style.display="block";
+    d3.style.display="block";
+    d6.innerHTML="must be valid month";
+    d6.style.display="block";
+    d9.innerHTML="must be valid year";
+    d9.style.display="block";
+   }else if(d5.value==""&& d8.value>year&&d2.value>31){
+    d6.style.display="block";
+    d9.innerHTML="must be valid year";
+    d9.style.display="block";
+    d3.innerHTML="must be vald date";
+    d3.style.display="block";
+   }else if(d8.value==""&&d2.value>31&&d5.value>12){
+    d9.style.display="block";
+    d9.style.display="block";
+    d3.innerHTML="must be vald date";
+    d6.innerHTML="must be valid month";
+    d6.style.display="block";
+   }else{
+    var y=(year-(d10.value));
+    d10.innerHTML=y;
    }
 }
 
