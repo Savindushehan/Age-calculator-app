@@ -92,8 +92,7 @@ span{
     padding-bottom: 20px;
   }
   .colum1,.colum2,.colum3{
-    margin-left:auto;
-    margin-right: auto;
+    margin-right: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 30%;
