@@ -73,9 +73,9 @@ BTN.onclick=function(){
     d6.innerHTML="must be valid month";
     d6.style.display="block";
    }else{
-    var y=year-d10.value;
-    var m=month-d11.value;
-    var d=day-d12.value;
+    var y=year-d8.value;
+    var m=month-d5.value;
+    var d=day-d2.value;
     d10.innerHTML=y;
     d11.innerHTML=m;
     d12.innerHTML=d;
