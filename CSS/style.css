@@ -1,0 +1,104 @@
+
+@font-face {
+    font-family:Poppins;
+    src: url('/assets/fonts/Poppins-Bold.ttf') format('ttf');
+    src: url('/assets/fonts/Poppins-BoldItalic.ttf') format('ttf');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+}
+.colum1,.colum2,.colum3{
+    display: flex;
+    flex-direction: column;
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    letter-spacing: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color:hsl(0, 1%, 44%);
+}
+input{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    margin-bottom: 0;
+    width: 90px;
+    border: 2px;
+    color:hsl(0, 1%, 44%);
+    outline: none;
+    border: 4px solid hsl(0, 0%, 94%);
+}
+h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 10px;
+    color: hsl(0, 100%, 67%);
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800i;
+    font-style: italic;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color:hsl(0, 0%, 8%) ;
+}
+span{
+    color: hsl(259, 100%, 65%);
+    letter-spacing: 10px;
+}
+
+@media only screen and (min-width:320px){
+    body{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+    }
+   .container{
+    width: 320px;
+    border: 4px solid hsl(0, 0%, 94%);
+    border-radius: 15px;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+   } 
+  .row1{
+    justify-content: center;
+    margin-bottom: 10px;
+    border-bottom: 2px solid  hsl(0, 0%, 94%);
+  }
+  .colum1,.colum2,.colum3{
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: hsl(259, 100%, 65%) ;
+    position: absolute;
+    top: 128px;
+}
+.row2{
+    padding-top: 50px;
+    padding-left: 5px;
+    padding-bottom: 100px;
+}
+}
