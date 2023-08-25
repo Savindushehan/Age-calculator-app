@@ -67,9 +67,9 @@ span{
         align-items: center;
         margin: auto;
         width: 100%;
-        min-height: 100vh;
-        max-height: 100vh;
-
+        height: 100vh;
+        overflow: hidden;
+        border: 2px solid red;
     }
    .container{
     width: 320px;

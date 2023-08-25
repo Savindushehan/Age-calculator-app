@@ -66,7 +66,9 @@ BTN.onclick=function(){
     d9.style.display="block";
     d3.innerHTML="must be vald date";
     d3.style.display="block";
-   }else if(d8.value==""&&d2.value>31&&d5.value>12){
+   }else if
+   (d8.value==""&&d2.value>31&&d5.value>12)
+   {
     d9.style.display="block";
     d9.style.display="block";
     d3.innerHTML="must be vald date";
