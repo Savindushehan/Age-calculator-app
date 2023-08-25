@@ -119,6 +119,7 @@ img{
 }
 input{
     width: 65px;
+    margin-left: 5px;
 }
 h4{
     display: none;
