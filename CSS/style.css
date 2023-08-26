@@ -67,9 +67,7 @@ span{
         align-items: center;
         margin: auto;
         width: 100%;
-        height: 100vh;
         overflow: hidden;
-        border: 2px solid red;
     }
    .container{
     display: flex;
@@ -91,10 +89,11 @@ span{
     padding-bottom: 20px;
   }
   .colum1,.colum2,.colum3{
-    margin-right: 5px;
+    margin-right: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 30%;
+    border: 2px solid red;
 }
 button{
     width: 60px;
@@ -118,7 +117,6 @@ img{
 }
 input{
     width: 65px;
-    margin-left: 10px;
 }
 h4{
     display: none;
