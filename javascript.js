@@ -72,7 +72,20 @@ BTN.onclick=function(){
     d3.innerHTML="must be vald date";
     d6.innerHTML="must be valid month";
     d6.style.display="block";
-   }else if(d5.value>month){
+   }else if(d2.value>day && d5.value>month){
+   console.log("savi2");
+         var y=year-d8.value;
+         var y1=Math.abs(y);
+         var m=((12-d5.value)+(month));
+         var m1=Math.abs(m);
+         var d=((30-d2.value)+day);
+         var dd=Math.abs(d);
+            d10.innerHTML=y1-1;
+            d12.innerHTML=dd;
+            d11.innerHTML=m1;
+   }
+   else if(d5.value>month){
+        console.log("savi4");
    var y=year-d8.value;
     var y1=Math.abs(y);
     var m=((12-d5.value)+month+1);
@@ -83,6 +96,7 @@ BTN.onclick=function(){
       d12.innerHTML=dd;
       d11.innerHTML=m;
    }else if(d2.value>day){
+       console.log("savi1");
       var y=year-d8.value;
       var y1=Math.abs(y);
       var m=month-d5.value;
@@ -92,18 +106,8 @@ BTN.onclick=function(){
          d10.innerHTML=y1;
          d12.innerHTML=dd;
          d11.innerHTML=m;
-      }
-else if(d2.value>day&&d5.value>month){
-         var y=year-d8.value;
-         var y1=Math.abs(y);
-         var m=((12-d5.value)+month+1);
-         var m1=Math.abs(m);
-         var d=((30-d2.value)+day);
-         var dd=Math.abs(d);
-            d10.innerHTML=y1;
-            d12.innerHTML=dd;
-            d11.innerHTML=m;
-   }else{
+      }else{
+        console.log("savi3");
     var y=year-d8.value;
     var y1=Math.abs(y);
     var m=month-d5.value;
