@@ -75,7 +75,6 @@ span{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 320px;
     border: 4px solid hsl(0, 0%, 94%);
     border-radius: 15px;

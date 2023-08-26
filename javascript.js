@@ -76,11 +76,14 @@ BTN.onclick=function(){
     d6.style.display="block";
    }else{
     var y=year-d8.value;
+    var y1=Math.abs(y);
     var m=month-d5.value;
+    var m1=Math.abs(m);
     var d=day-d2.value;
-    d10.innerHTML=y;
-    d11.innerHTML=m;
-    d12.innerHTML=d;
+    var dd=Math.abs(d);
+    d10.innerHTML=y1;
+    d11.innerHTML=m1;
+    d12.innerHTML=dd;
    }
 }
 
