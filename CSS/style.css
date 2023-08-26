@@ -94,7 +94,6 @@ span{
     margin-top: 20px;
     margin-bottom: 20px;
     width: 30%;
-    border: 2px solid red;
 }
 .colum3{
     margin-right: 0;
@@ -105,7 +104,7 @@ button{
     border-radius: 50%;
     background-color: hsl(259, 100%, 65%) ;
     position: fixed;
-    top: 128px;
+    top: 23%;
     cursor: pointer;
     border: none;
 }
