@@ -81,7 +81,7 @@ BTN.onclick=function(){
     var dd=Math.abs(d);
       d10.innerHTML=y1-1;
       d12.innerHTML=dd;
-      d11.innerHTML=m;
+      d11.innerHTML=+1;
    }else if(d2.value>day){
       var y=year-d8.value;
       var y1=Math.abs(y);
@@ -101,7 +101,7 @@ BTN.onclick=function(){
     var d=day-d2.value;
     var dd=Math.abs(d);
     d10.innerHTML=y1;
-    d11.innerHTML=m1;
+    d11.innerHTML=m1+1;
     d12.innerHTML=dd;
    }
 }
