@@ -82,7 +82,17 @@ BTN.onclick=function(){
       d10.innerHTML=y1-1;
       d12.innerHTML=dd;
       d11.innerHTML=m;
-   }
+   }else if(d2.value>day){
+      var y=year-d8.value;
+      var y1=Math.abs(y);
+      var m=month-d5.value;
+      var m1=Math.abs(m);
+      var d=((30-d2.value)+day);
+      var dd=Math.abs(d);
+         d10.innerHTML=y1;
+         d12.innerHTML=dd;
+         d11.innerHTML=m-1;
+      }
    else{
     var y=year-d8.value;
     var y1=Math.abs(y);
